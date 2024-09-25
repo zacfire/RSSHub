@@ -1,14 +1,16 @@
 {
+  "framework": null,
+  "github": { "silent": true },
   "builds": [
     {
-      "src": "lib/index.js",
+      "src": "api/vercel.ts",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "lib/index.js"
+      "dest": "/api/vercel.ts"
     }
   ]
 }
