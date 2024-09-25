@@ -3,14 +3,14 @@
   "github": { "silent": true },
   "builds": [
     {
-      "src": "api/vercel.js",
+      "src": "api/vercel.mjs",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/api/vercel.js"
+      "dest": "/api/vercel.mjs"
     }
   ]
 }
